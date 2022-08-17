@@ -19,18 +19,18 @@ class MainActivity : AppCompatActivity() {
 
         var ap: Button = findViewById(R.id.button)
         var bes: TextView = findViewById(R.id.textView)
-        var flag: String = "search"
+        var flag: String = "Search"
         var maxi: Int= 0
         var name :String= ""
-        var cate = arrayOf("search", "games", "food")
+        var cate = arrayOf("Search", "Games", "Food")
         var spin: Spinner = findViewById(R.id.spinner)
         spin.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, cate)
         val cols = listOf<String>(BEST_APP._ID,BEST_APP.NAME,
         BEST_APP.RANK).toTypedArray()
 
         ap.setOnClickListener {
-             if (flag == "search") {
-                 val uri = contentResolver.query(BEST_APP.CONTENT_URI , cols , "category LIKE ?", Array(1){ "search"  },cols[0] )
+             if (flag == "Search") {
+                 val uri = contentResolver.query(BEST_APP.CONTENT_URI , cols , "category LIKE ?", Array(1){ "Search"  },cols[0] )
                  while(uri?.moveToNext()==true){
                      if(maxi< uri.getInt(2)){
                         maxi=uri.getInt(2)
@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
  var a :TextView =findViewById(R.id.textView)
                      a.text=name
 
-            } else if (flag == "games") {
-                 val uri = contentResolver.query(BEST_APP.CONTENT_URI , cols , "category LIKE ?", Array(1){ "games"  },cols[0] )
+            } else if (flag == "Games") {
+                 val uri = contentResolver.query(BEST_APP.CONTENT_URI , cols , "category LIKE ?", Array(1){ "Games"  },cols[0] )
                  while(uri?.moveToNext()==true){
                      if(maxi< uri.getInt(2)){
                          maxi=uri.getInt(2)
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
 
              } else{
-                 val uri = contentResolver.query(BEST_APP.CONTENT_URI , cols , "category LIKE ?", Array(1){ "food"  },cols[0] )
+                 val uri = contentResolver.query(BEST_APP.CONTENT_URI , cols , "category LIKE ?", Array(1){ "Food"  },cols[0] )
                  while(uri?.moveToNext()==true){
                      if(maxi< uri.getInt(2)){
                          maxi=uri.getInt(2)

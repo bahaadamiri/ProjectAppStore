@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4">
 
     <EditText
         android:id="@+id/editText3"
@@ -13,25 +15,31 @@
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="48dp"
-        android:hint="new top"
+        android:layout_marginTop="100dp"
+        android:hint="New Top"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="231dp"
-        android:layout_height="51dp"
+        android:layout_width="222dp"
+        android:layout_height="43dp"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:hint=" old app id"
+        android:layout_marginTop="100dp"
+        android:hint="Old App ID"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
-        tools:layout_editor_absoluteX="16dp" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
         android:id="@+id/editText2"
@@ -41,55 +49,71 @@
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:hint="new category"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:hint="New Category"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintStart_toEndOf="@+id/editText1"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/add1"
-        android:layout_width="126dp"
-        android:layout_height="43dp"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
 
-        android:layout_marginTop="36dp"
-        android:text="Update"
+
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#FFC107"
+
+        android:text="UPDATE"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/editText4"
-        tools:layout_editor_absoluteX="9dp" />
+        tools:layout_editor_absoluteX="44dp" />
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="135dp"
-        android:layout_height="54dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:hint="new name app"
+        android:layout_marginTop="56dp"
+        android:hint="New App Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="44dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="298dp"
         android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:text="update app"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Update App"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -97,9 +121,11 @@
         android:id="@+id/cancle"
         android:layout_width="117dp"
         android:layout_height="45dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
-        android:text="cancle"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="#FFC107"
+        android:text="CANCEL"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/add1"
         app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
@@ -107,8 +133,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="445dp" />
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="533dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

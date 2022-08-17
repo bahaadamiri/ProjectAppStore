@@ -12,6 +12,11 @@
         <entry key="..\:/Users/iGeeK/AndroidStudioProjects/project/app/src/main/res/xml/deletedi.xml" value="0.1" />
         <entry key="..\:/Users/iGeeK/AndroidStudioProjects/project/app/src/main/res/xml/insartdia.xml" value="0.1" />
         <entry key="..\:/Users/iGeeK/AndroidStudioProjects/project/app/src/main/res/xml/updatedi.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/deletedi.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/ins.xml" value="0.3177342732747396" />
+        <entry key="app/src/main/res/layout/updatedi.xml" value="0.3501883244168931" />
+        <entry key="app/src/main/res/menu/settings.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>
@@ -20,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3098958333333333" />
+      </ProjectState>
+    </option>
   </component>
 </project>

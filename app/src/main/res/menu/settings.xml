@@ -9,24 +9,24 @@
     <item
         android:id="@+id/item1"
 
-    android:title="insart"
+        android:title="Insert"
 
-    app:showAsAction="never"/>
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/item2"
 
-        android:title="delete"
+        android:title="Delete"
 
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 
 
     <item
         android:id="@+id/item3"
 
-        android:title="update"
+        android:title="Update"
 
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 
 
 

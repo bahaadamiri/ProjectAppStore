@@ -2,102 +2,124 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4">
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="293dp"
-        android:layout_height="64dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="152dp"
-        android:hint="category"
+        android:layout_marginTop="268dp"
+        android:hint="Category"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/add1"
-        android:layout_width="126dp"
-        android:layout_height="43dp"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
 
         android:layout_below="@+id/editText2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
 
-        android:layout_marginTop="68dp"
-        android:text="Add "
+        android:layout_marginTop="272dp"
+        android:backgroundTint="#4CAF50"
+        android:text="ADD "
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="293dp"
-        android:layout_height="64dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:hint="APP name"
+        android:layout_marginTop="56dp"
+        android:hint="App Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editText2"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="297dp"
+        android:layout_width="200dp"
 
 
-        android:layout_height="57dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/editText1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="12dp"
-        android:hint="RANK"
+        android:layout_marginTop="48dp"
+        android:hint="Rating Out Of 10"
         android:selectAllOnFocus="false"
         android:singleLine="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColorHint="@android:color/holo_blue_bright"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="188dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="68dp"
-        android:text="store app"
+        android:layout_width="298dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Insert App"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/cancle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:text="cancle"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="272dp"
+        android:backgroundTint="#4CAF50"
+        android:text="CANCEL"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
